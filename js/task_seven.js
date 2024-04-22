@@ -21,3 +21,28 @@ function sortArr(arr) {
 }
 console.log(sortArr(langs));
 sortArr(langs)
+
+function sortByLength(array) {
+  // Return an array containing the same strings,
+  // ordered from shortest to longest
+  let arr = [...array]
+  console.log(arr);
+
+  let min = arr[0].length;
+
+  let some = [];
+
+  for (let i = 0; i < arr.length; i += 1) {
+    if (min > arr[i].length) {
+      min = arr[i].length;
+      some.push(arr[i])
+    }
+  }
+
+  console.log(some);
+
+  return [];
+}
+
+
+sortByLength(['', 'Moderately', 'Brains', 'Pizza']);
