@@ -13,3 +13,25 @@ for (let number of numbers) {
 }
 
 console.log(min);
+
+
+function oddCount(n) {
+  // your code here
+
+  const res = [];
+
+  for (let i = 0; i < n; i += 1) {
+    
+    if (i % 2) {
+      res.push(i);
+    }
+  }
+
+  return res.length;
+}
+
+
+console.log(oddCount(7));
+console.log(oddCount(15));
+
+console.log(oddCount(15023));
