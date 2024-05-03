@@ -31,6 +31,7 @@ function getCoupeNumber(number = 1) {
 console.log(getCoupeNumber(37));
 
 /**
+ * function getTimeFromMinutes
  * принимает в себя целое число минут и возвращае время в нужном формате строки
  * @param {Number} minutes
  * @return {String}
@@ -60,3 +61,26 @@ function getTimeFromMinutes(minutes) {
 }
 
 console.log(getTimeFromMinutes(60));
+
+
+
+
+/**
+ * function findMaxNumber
+ * принимает в себя 4 числа и возвращает самое большее из них
+ * @param {...Number} rest 
+ * @return {Number}
+ */
+function findMaxNumber(...rest) {
+  const arr = [...rest];
+
+  let par = arr.every(elem => typeof elem === 'number') 
+
+  if (!par || arr.length < 4) {
+    return 0
+  }
+
+  return Math.max(...arr)
+}
+
+console.log(findMaxNumber(1, 5, 6.6, 11));
