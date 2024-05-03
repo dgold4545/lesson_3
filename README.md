@@ -18,3 +18,8 @@ calculateVolumeAndArea(15.5)  => 'При вычислении произошла
 calculateVolumeAndArea('15')  => 'При вычислении произошла ошибка'
 
 calculateVolumeAndArea(-15)  => 'При вычислении произошла ошибка'
+
+
+if (typeof (cubeEdge) !== 'number' || cubeEdge < 0 || !Number.isInteger(cubeEdge)) {
+        return "При вычислении произошла ошибка";
+    }
