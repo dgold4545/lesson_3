@@ -2,12 +2,13 @@
 
 
 
-let options = {
-  width: 400,
-  height: 500,
-  color: 'green'
-};
+function calculateVolumeAndArea(cubeEdge) {
 
-const { color: c = 'black', width, height } = options;
+  const cubeVolume = Math.pow(cubeEdge, 3);
 
-console.log(c);
+  const cubeArea = 6 * Math.pow(cubeEdge,2);
+
+  return `Объем куба: ${cubeVolume}, площадь всей поверхности: ${cubeArea}`;
+}
+
+console.log(calculateVolumeAndArea(5));
